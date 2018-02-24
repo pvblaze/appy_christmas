@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.appychristmas.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        >
+
+
+        luteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="Ho ho ho, Appy Christmas!"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/text0"
+            android:layout_centerHorizontal="true"
+            android:text="Vem eller vilka har varit snälla i år?"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+
+        <CheckBox
+            android:id="@+id/checkBoxWalde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="11dp"
+            android:onClick="selectItem"
+            android:text="@string/walde"
+            android:textColor="#ffffff" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMolde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBoxWalde"
+            android:layout_marginTop="11dp"
+            android:onClick="selectItem"
+            android:text="@string/molde"
+            android:textColor="#ffffff" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNicole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBoxMolde"
+            android:layout_alignStart="@+id/checkBoxMolde"
+            android:layout_below="@+id/checkBoxMolde"
+            android:layout_marginTop="11dp"
+            android:onClick="selectItem"
+            android:text="@string/nicole"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBoxNicole"
+            android:layout_marginTop="17dp"
+            android:onClick="finalSelection"
+            android:text="@string/done" />
+
+        <TextView
+            android:id="@+id/final_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button3"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+
+            />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button3"
+            android:layout_alignRight="@+id/button3"
+            android:layout_below="@+id/final_result"
+            android:onClick="ok"
+            android:text="2. Godkänn" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button5"
+            android:onClick="catch"
+            android:text="3. Julklapp nu tack!"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
